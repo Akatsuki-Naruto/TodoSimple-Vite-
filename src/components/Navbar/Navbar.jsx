@@ -2,20 +2,22 @@ import React, { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
+import "./Navbar.css"
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 flex justify-between items-center px-8 text-white">
-      <h1 className="text-3xl font-bold text-[#00df9a]">A.T</h1>
-      <ul className="flex items-center text-[#ccd6f6]">
-        <li className="p-4"><a>01. About</a></li>
-        <li className="p-4"><a>02. Experience</a></li>
-        <li className="p-4"><a>03. Work</a></li>
-        <li className="p-4"><a>04. Contact</a></li>
-        <li className="p-4">
+    <div className="header">
+      <h1 className="indexBtn" ><a href="index.html">A.T</a></h1>
+      <ul className="ulNavbar">
+        <li className="about active"><a>01. About</a></li>
+        <li className="experience"><a>02. Experience</a></li>
+        <li className="work"><a>03. Work</a></li>
+        <li className="contact"><a>04. Contact</a></li>
+        {/* <li className="p-4">
           <Menu as="div" className="relative inline-block text-left">
             <div>
               <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
@@ -104,9 +106,9 @@ const Navbar = () => {
               </Menu.Items>
             </Transition>
           </Menu>
-        </li>
+        </li> */}
         <li>
-          <button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Resume</button>
+          <button className="Btn resumeBtn">Resume</button>
         </li>
       </ul>
     </div>

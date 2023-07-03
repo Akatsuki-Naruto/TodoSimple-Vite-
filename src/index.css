@@ -1,11 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================================
+            Root Component
+================================================================ */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0a192f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,20 +21,24 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* ================================================================
+            Body Component
+================================================================ */
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #43e957;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #777eff;
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 540px;
   min-height: 100vh;
 }
 
@@ -66,4 +77,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* ================================================================
+            Application
+================================================================ */
+.App {
+  text-align: center;
 }

@@ -1,0 +1,30 @@
+/* ================================================================
+            About Component
+================================================================ */
+
+.textTopicAbout {
+    padding: 20px 0px;
+}
+
+.textAbout {
+    text-align: left;
+}
+
+.listSkills {
+    list-style:square;
+    color: aqua;
+}
+
+.listSkills li{
+    padding: 10px;
+    font-size: small;
+}
+
+/* .listSkills li::before {
+    content: "▹";
+    position: absolute;
+    color: var(--green);
+    font-size: var(--fz-sm);
+    line-height: 12px;
+} */
+  

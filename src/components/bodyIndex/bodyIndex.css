@@ -1,0 +1,37 @@
+/* ================================================================
+            main Component
+================================================================ */
+
+.textIndex {
+  display:flex;
+  text-align: left;
+  line-height: 1.3;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 12;
+}
+
+.textIndex1 {
+  color: #64ffda;
+  font-size: smaller;
+}
+
+.textIndex2 {
+  color: #4a9ae1;
+  font-size: 60px;
+}
+
+.textIndex3 {
+  color: #8b8e8f;
+  font-size: 40px;
+}
+
+.textIndex4 {
+  color: #555555;
+  font-size: auto;
+}
+
+.textIndex {
+  height: 600px;
+}

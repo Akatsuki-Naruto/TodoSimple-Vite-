@@ -1,0 +1,65 @@
+/* ================================================================
+            Navbar Component
+================================================================ */
+
+.header {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    --tw-text-opacity: 1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;
+    height: 5rem;
+    z-index: 15;
+    background-color: rgb(10, 25, 47, 0.85) ;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px -10px;
+  }
+  
+  .indexBtn {
+    width: min-content;
+    padding: 15px 0px;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0px 0px 0px 0px;
+    --tw-text-opacity: 1;
+  }
+  
+  .indexBtn a {
+    color: rgb(0 223 154);
+  }
+  
+  .ulNavbar {
+    display: flex;
+    align-items: center;
+    --tw-text-opacity: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .ulNavbar .active {
+    border-bottom: #64ffda solid 1px;
+  }
+  
+  .ulNavbar a {
+    color: rgb(204 214 246);
+  }
+  
+  .ulNavbar li {
+    padding: 0.75rem;
+  }
+  
+  .resumeBtn {
+    display: flex;
+    border: 1px;
+    border-style: solid;
+    align-items: center;
+    border-color: #64ffda;
+    border-radius: 12px;
+  }
