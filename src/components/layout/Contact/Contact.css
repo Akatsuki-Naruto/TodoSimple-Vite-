@@ -1,0 +1,40 @@
+#contactContent {
+  padding: 100px 0px;
+}
+
+.textTopicContact {
+  margin: 10px 0px 40px 0px;
+  text-align: center;
+  font-size: medium;
+  color: aqua;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.getInTouch {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.textContact {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkgrey;
+  margin-bottom: 40px;
+}
+
+.contactBtn {
+  background-color: #0a192f;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.contactBtn:hover {
+  color: rgb(0, 255, 0);
+  border: 1px solid rgb(0, 255, 0);
+}
+
+.contactBtn a {
+  color: white;
+}

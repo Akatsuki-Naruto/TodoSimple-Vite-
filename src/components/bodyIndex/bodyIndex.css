@@ -14,7 +14,7 @@
 
 .textIndex1 {
   color: #64ffda;
-  font-size: smaller;
+  font-size: 15px;
 }
 
 .textIndex2 {
@@ -34,4 +34,37 @@
 
 .textIndex {
   height: 600px;
+}
+
+.author a{
+  color: #8b8e8f;
+  font-size: 13px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .bodyFooter{
+    display: none;
+  }
+  .bodyFooter .butn{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bodyFooter{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    margin: 0px;
+  }
+  .bodyFooter .butn{
+    display: flex;
+  }
+  .bodyFooter a{
+    display: flex;
+    padding: 0px 10px;
+  }
 }

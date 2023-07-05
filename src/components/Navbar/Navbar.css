@@ -1,65 +1,248 @@
 /* ================================================================
-            Navbar Component
+            Navbar Component Header
 ================================================================ */
 
 .header {
-    position: fixed;
-    display: flex;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    --tw-text-opacity: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    justify-content: space-between;
-    height: 5rem;
-    z-index: 15;
-    background-color: rgb(10, 25, 47, 0.85) ;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px -10px;
-  }
+  position: fixed;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  --tw-text-opacity: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+  height: 5rem;
+  z-index: 15;
+  background-color: hsla(217, 64%, 11%, 0.706);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px rgb(38, 32, 32);
+}
+
+.indexBtn {
+  width: min-content;
+  padding: 15px 0px;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin: 0px 0px 0px 0px;
+  --tw-text-opacity: 1;
+}
+
+.indexBtn a {
+  color: rgb(0 223 154);
+}
+
+.ulNavbar {
+  display: flex;
+  align-items: center;
+  --tw-text-opacity: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ulNavbar .active {
+  border-bottom: #64ffda solid 1px;
+}
+
+.ulNavbar a {
+  color: rgb(204 214 246);
+}
+
+.ulNavbar li {
+  padding: 0.75rem;
+}
+
+.resumeBtn {
+  display: flex;
+  border: 1px;
+  border-style: solid;
+  align-items: center;
+  border-color: #64ffda;
+  border-radius: 12px;
+}
+
+/* ================================================================
+            Navbar Component Footer
+================================================================ */
+
+.footer .butn{
+  margin-bottom: 5px ;
+}
+
+.btnGithub{
   
-  .indexBtn {
-    width: min-content;
-    padding: 15px 0px;
-    font-weight: 700;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    margin: 0px 0px 0px 0px;
-    --tw-text-opacity: 1;
+  width: 30px;
+  height: 30px;
+  background-color: #0a192f;
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill-rule: evenodd;
+
+}
+
+.lineIndex{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #666969;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px){
+  .contactFooter {
+  position: fixed;
+  z-index: 17;
+  left: 20px;
+  bottom: 0px;
   }
+}
+
+
+.gmail{
+  position: fixed;
+  z-index: 17;
+  right: 20px;
+  bottom: 0px;
+}
+
+.gmail a{
+  color: #666969;
+}
+
+.gmail a:hover{
+  color: #64ffda;
+}
+
+.gmailIndex{
+  position: fixed;
+  right: -33px;
+  bottom: 165px;
+  transform: rotate(90deg);
+  font-size: smaller;
+}
+
+.lineIndex2{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px 20px 0px 0px;
+  background-color: #666969;
+  margin-top: 0px;
   
-  .indexBtn a {
-    color: rgb(0 223 154);
+}
+
+.menuBtn {
+  background-color: #0a192f;
+  padding: 0px;
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  display: flex;
+}
+
+.menuBtn:hover{
+  color: #0a192f;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .ulNavbar{
+    display: none;
   }
-  
-  .ulNavbar {
-    display: flex;
-    align-items: center;
-    --tw-text-opacity: 1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+  .footer{
+    display: none;
   }
-  
-  .ulNavbar .active {
-    border-bottom: #64ffda solid 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .menuBtn{
+    display: none;
   }
-  
-  .ulNavbar a {
-    color: rgb(204 214 246);
-  }
-  
-  .ulNavbar li {
-    padding: 0.75rem;
-  }
-  
-  .resumeBtn {
-    display: flex;
-    border: 1px;
-    border-style: solid;
-    align-items: center;
-    border-color: #64ffda;
-    border-radius: 12px;
-  }
+}
+
+
+/* ================================================================
+            Navbar Component Footer
+================================================================ */
+
+
+
+.ulPopup a {
+  color: rgb(204 214 246);
+}
+
+.ulPopup {
+  display: flex;
+  align-items: center;
+  --tw-text-opacity: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.ulPopup li{
+  padding-bottom: 0.75rem;
+}
+
+.resumePopupBtn {
+  display: flex;
+  border: 1px;
+  border-style: solid;
+  align-items: center;
+  border-color: #64ffda;
+  border-radius: 12px;
+}
+
+.closeMenuBtn {
+  position: fixed;
+  background-color: #0a192f;
+  padding: 0px;
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  display: flex;
+  text-align: right;
+}
+
+.closeMenuBtn:hover{
+  color: #0a192f;
+  border: none;
+}
+
+.PopupList {
+  background: transparent;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 400px;
+  /* background-color:#64ffda ; */
+}
+/* 
+.motionBlur {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width:100%;
+  background: rgba(0, 0, 0, 0.3 );
+  backdrop-filter: blur(5px);
+  z-index: 30;
+}
+.hidden-blur {
+  display: none; }*/
+
+
