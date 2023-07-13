@@ -1,10 +1,10 @@
 import React from "react";
 
-import About from "../layout/About/About";
+import About from "../layout/About";
 import "./bodyIndex.css";
 import Experience from "../layout/Experience/Experience";
 import Project from "../layout/Project/Project";
-import Contact from "../layout/Contact/Contact";
+import Contact from "../layout/Contact";
 
 const BodyIndex = () => {
   return (

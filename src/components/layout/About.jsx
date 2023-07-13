@@ -1,17 +1,17 @@
 import React from "react";
-
-import "./About.css";
+import clsx from "clsx";
 
 const About = () => {
+  const listLi = clsx("p-2 text-sm")
   return (
     <>
-      <div id="aboutContent">
-        <div className="textTopicAbout ">
+      <div className={clsx("aboutContent px-0 py-24")}>
+        <div className={clsx("textTopicAbout mt-2 mb-10 text-left text-lg text-primary-1")}>
           01.
-          <span className="topicContent"> ABOUT ME </span>
+          <span className={clsx("topicContent text-primary-2 text-xl pl-1")}> ABOUT ME </span>
         </div>
-        <div id="textAboutContent">
-          <div className="textAbout">
+        <div className={clsx("textAboutContent md:grid md:grid-cols-2 flex flex-col gap-12")}>
+          <div className={clsx("textAbout text-left")}>
             <div className="textAbout1">
               Hello! There, I'm Front-End developer.
             </div>
@@ -35,14 +35,14 @@ const About = () => {
               UI controls, HTML.
             </div>
             <div>Qualifications and experience:</div>
-            <ul className="listSkills">
-              <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Figma</li>
+            <ul className={clsx("listSkills list-none text-primary-1")}>
+              <li className={listLi}>JavaScript (ES6+)</li>
+              <li className={listLi}>React</li>
+              <li className={listLi}>Figma</li>
             </ul>
           </div>
           <div>
-            <div className="imgAboutD">
+            <div className={clsx("imgAboutD md:ml-[25%] w-60 h-72 border-1 border-solid border-white bg-black z-[11]")}>
               {/* <img className="imgAbout" src="" alt="" /> */}
             </div>
             {/* <div className="borderBackground"></div> */}

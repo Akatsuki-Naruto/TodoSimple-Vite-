@@ -37,7 +37,6 @@ function Popup(props) {
           <button className="Btn resumePopupBtn">Resume</button>
         </li>
       </ul>
-      {/* <div className="motionBlur"></div> */}
       {props.children}
     </div>
   ) : (

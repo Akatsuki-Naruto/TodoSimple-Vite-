@@ -1,62 +1,13 @@
-/* ===============================================================================
-                    experience Component
-=============================================================================== */
-
-#experienceContent {
-  padding: 100px 0px;
-}
-
-.textTopicExp {
-  margin: 10px 0px 40px 0px;
-  text-align: left;
-  font-size: large;
-  color: aqua;
-}
-
-.topicExp {
-  color: #ccd6f6;
-  font-size: x-large;
-  padding-left: 5px;
-}
-
 .tabGroup {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 20px;
 }
 
-.tabList {
-  display: flex;
-  flex-direction: column;
-  font-family: "Courier New", Courier, monospace;
-  color: #8892b0;
-}
-
 .list:hover {
-  color: #00ccff;
+  color: #006d88;
   border: 1px solid #00ccff;
   background-color: #202429b4;
-}
-
-.schoolExp {
-  text-align: left;
-}
-
-.nameUniversity {
-  font-size: large;
-  color: #ccd6f6;
-}
-
-.timeStudy {
-  font-size: 13px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #a8b2d1;
-  margin: 5px 0px 20px 0px;
-}
-
-.inforMajor {
-  line-height: 2;
-  color: #8892b0;
 }
 
 .listSubject li {
@@ -65,26 +16,6 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-.workExp {
-  text-align: left;
-}
-
-.nameCompany {
-  font-size: large;
-  color: #ccd6f6;
-}
-
-.timeWork {
-  font-size: 13px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #a8b2d1;
-  margin: 5px 0px 20px 0px;
-}
-
-.inforJob {
-  line-height: 2;
-  color: #8892b0;
-}
 
 .listLanguage li {
   list-style: none;
