@@ -2,15 +2,12 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import Post from "./Post";
+import { client } from "./api";
 
 function CallAPI() {
   const [Projects, setProjects] = useState([]);
 
   // Functions
-  const client = axios.create({
-    baseURL:
-      "https://my-json-server.typicode.com/Akatsuki-Naruto/db-TodoSimple/Project",
-  });
 
   const fetchProjects = async () => {
     const response = await client.get("?_limit=4");
@@ -20,6 +17,12 @@ function CallAPI() {
   useEffect(() => {
     fetchProjects();
   }, []);
+
+  // const getMyBooks = async (id) => {
+  //   const response = await apiMyBooks.get(`?_limit=2&id=${id}`);
+  //   setInforBooks(Books.filter((Book) => Book.id === (id%2==1)));
+  // };
+
 
   return (
     <>

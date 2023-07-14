@@ -1,0 +1,117 @@
+LI 
+
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+
+transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+  transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+=============
+
+
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+
+transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s,
+  transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+
+
+
+
+
+
+
+
+Content
+
+  element.style {
+}
+<style>
+.eeeRej .project-content {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+}
+
+
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+
+
+==========
+
+
+
+element.style {
+}
+<style>
+.eeeRej:nth-of-type(2n+1) .project-content {
+    grid-column: 7 / -1;
+    text-align: right;
+}
+
+<style>
+.eeeRej .project-content {
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+}
+
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+
+
+
+
+image
+
+
+
+.eeeRej .project-image {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 1;
+}
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+========
+
+.eeeRej:nth-of-type(2n+1) .project-image {
+    grid-column: 1 / 8;
+}
+<style>
+.eeeRej .project-image {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 1;
+}
+
+<style>
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}

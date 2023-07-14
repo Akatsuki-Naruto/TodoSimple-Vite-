@@ -5,7 +5,7 @@ const About = () => {
   const listLi = clsx("p-2 text-sm")
   return (
     <>
-      <div className={clsx("aboutContent px-0 py-24")}>
+      <div id="aboutContent" className={clsx(" px-0 py-24")}>
         <div className={clsx("textTopicAbout mt-2 mb-10 text-left text-lg text-primary-1")}>
           01.
           <span className={clsx("topicContent text-primary-2 text-xl pl-1")}> ABOUT ME </span>

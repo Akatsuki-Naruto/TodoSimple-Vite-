@@ -1,5 +1,6 @@
 
 
+import clsx from 'clsx';
 import './App.css'
 import Navbar from './components/Navbar/Navbar';
 import BodyIndex from './components/bodyIndex/bodyIndex';
@@ -7,7 +8,7 @@ import BodyIndex from './components/bodyIndex/bodyIndex';
 
 function App() {
   return (
-    <div className="App">
+    <div className={clsx("App text-center")}>
       <Navbar/>
       <BodyIndex/>
     </div>

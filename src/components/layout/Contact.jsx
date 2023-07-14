@@ -4,7 +4,7 @@ import clsx from "clsx";
 const Contact = () => {
   return (
     <>
-      <div className={clsx("contactContent py-24 ")}>
+      <div id="contactContent" className={clsx(" py-24 ")}>
         <div className={clsx("textTopicContact mt-2 mb-10 text-center text-base text-primary-1 font-normal italic")}>04. What’s Next?</div>
 
         <div className={clsx("getInTouch text-3xl font-bold mb-7")}>GET IN TOUCH</div>
@@ -16,7 +16,7 @@ const Contact = () => {
         </div>
 
         <a href="mailto:thuc050701@gmail.com">
-          <button className={clsx("btn contactBtn bg-primary-4 text-white border-1 border-white border-solid hover:text-black hover:bg-primary-5")}>Say Hello!</button>
+          <button className={clsx("btn contactBtn bg-primary-4 text-white border-1 border-white border-solid hover:text-black hover:bg-primary-5 py-2 px-4")}>Say Hello!</button>
         </a>
       </div>
     </>
