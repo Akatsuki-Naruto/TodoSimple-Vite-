@@ -21,22 +21,22 @@ function Popup(props) {
           "ulPopup flex items-center text-opacity-100 list-none m-0 p-0 box-border flex-col fixed top-0 bg-primary-22 right-0 w-1/2 h-screen pt-20 md:hidden"
         )}
       >
-        <li className={ulPopupLi}>
+        <li className={ulPopupLi} onClick={handleReturn}>
           <a className={ulPopupA} href="#aboutContent">
             01. About
           </a>
         </li>
-        <li className={ulPopupLi}>
+        <li className={ulPopupLi} onClick={handleReturn}>
           <a className={ulPopupA} href="#experienceContent">
             02. Experience
           </a>
         </li>
-        <li className={ulPopupLi}>
+        <li className={ulPopupLi} onClick={handleReturn}>
           <a className={ulPopupA} href="#projectContent">
             03. Project
           </a>
         </li>
-        <li className={ulPopupLi}>
+        <li className={ulPopupLi} onClick={handleReturn}>
           <a className={ulPopupA} href="#contactContent">
             04. Contact
           </a>

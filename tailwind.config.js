@@ -27,7 +27,8 @@ export default {
           20:'#64ffda',
           21:'#666969',
           22:'#112240',
-          23:'#464647b5'
+          23:'#464647b5',
+          24:'#7fffd4'
         },
         secondary: {
           300: "#8892b0",
@@ -63,6 +64,9 @@ export default {
       screens:{
         'm-md':{'max':'768px'},
         'md': '768px',
+      },
+      gridTemplateColumns: {
+        'project': 'repeat(12, 1fr)',
       }
     },
   },

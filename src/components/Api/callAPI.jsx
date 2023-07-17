@@ -3,6 +3,7 @@ import axios from "axios";
 
 import Post from "./Post";
 import { client } from "./api";
+import clsx from "clsx";
 
 function CallAPI() {
   const [Projects, setProjects] = useState([]);
@@ -26,7 +27,7 @@ function CallAPI() {
 
   return (
     <>
-      <ul>
+      <ul className={clsx("list-none p-0 m-0")}>
         {Projects.map((Project) => (
           <Post
             key={Project.id}
