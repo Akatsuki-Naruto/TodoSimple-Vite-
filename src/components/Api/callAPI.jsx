@@ -27,7 +27,7 @@ function CallAPI() {
 
   return (
     <>
-      <ul className={clsx("list-none p-0 m-0")}>
+      <ul className={clsx("list-none p-0 m-0 md:w-4/5 md:h-[2000px]")}>
         {Projects.map((Project) => (
           <Post
             key={Project.id}

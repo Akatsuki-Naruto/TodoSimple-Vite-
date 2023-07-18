@@ -66,7 +66,7 @@ export default {
         'md': '768px',
       },
       gridTemplateColumns: {
-        'project': 'repeat(12, 1fr)',
+        'project': 'repeat(13, 1fr)',
       }
     },
   },

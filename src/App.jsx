@@ -8,7 +8,7 @@ import BodyIndex from './components/bodyIndex/bodyIndex';
 
 function App() {
   return (
-    <div className={clsx("App text-center")}>
+    <div className={clsx("App text-center flex justify-center")}>
       <Navbar/>
       <BodyIndex/>
     </div>
