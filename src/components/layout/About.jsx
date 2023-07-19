@@ -1,16 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 
 const About = () => {
-  const listLi = clsx("p-2 text-sm")
+  const listLi = clsx("p-2 text-sm");
+  const border = clsx(
+    " absolute w-60 h-72 border-1 mt-5 ml-5 border-solid border-white z-[5] content block content-none rounded-xl ease-linear"
+  );
+  const border2 = clsx(
+    " absolute w-60 h-72 border-1 mt-2 ml-2 border-solid border-white z-[5] content block content-none rounded-xl ease-linear"
+  );
+  const [isAdd, setIsAdd] = useState(true);
+
+  const addClass = () => {
+    setIsAdd(false);
+  };
+  const removeClass = () => {
+    setIsAdd(true);
+  }
   return (
     <>
       <div id="aboutContent" className={clsx(" px-0 py-24")}>
-        <div className={clsx("textTopicAbout mt-2 mb-10 text-left text-lg text-primary-1")}>
+        <div
+          className={clsx(
+            "textTopicAbout mt-2 mb-10 text-left text-lg text-primary-1"
+          )}
+        >
           01.
-          <span className={clsx("topicContent text-primary-2 text-xl pl-1")}> ABOUT ME </span>
+          <span className={clsx("topicContent text-primary-2 text-xl pl-1")}>
+            {" "}
+            ABOUT ME{" "}
+          </span>
         </div>
-        <div className={clsx("textAboutContent md:grid md:grid-cols-2 flex flex-col gap-12")}>
+        <div
+          className={clsx(
+            "textAboutContent md:grid md:grid-cols-2 flex flex-col gap-12"
+          )}
+        >
           <div className={clsx("textAbout text-left")}>
             <div className="textAbout1">
               Hello! There, I'm Front-End developer.
@@ -42,10 +67,25 @@ const About = () => {
             </ul>
           </div>
           <div>
-            <div className={clsx("imgAboutD md:ml-[25%] w-60 h-72 border-1 border-solid border-white bg-black z-[11]")}>
-              {/* <img className="imgAbout" src="" alt="" /> */}
+            <div
+              onMouseOver={addClass}
+              onMouseOut={removeClass}
+              className={clsx(
+                `imgAboutD md:ml-[25%] w-60 h-72 border-1 border-solid border-white z-[6] block rounded-xl mb-6 mr-6`
+              )}
+            >
+              <img
+                onmouseover={addClass}
+                onMouseOut={removeClass}
+                className={clsx(
+                  " absolute z-[6] border-none flex w-60 h-72 rounded-xl object-cover"
+                )}
+                src="../../assets/img/1155155.jpg"
+                alt=""
+              />
+
+              <div className={isAdd ? border : border2}></div>
             </div>
-            {/* <div className="borderBackground"></div> */}
           </div>
         </div>
       </div>

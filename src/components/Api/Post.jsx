@@ -7,28 +7,28 @@ export default function Post(Project) {
       {Project.id % 2 == 0 ? (
         <div
           className={clsx(
-            "listProject py-[100px] grid grid-cols-12 gap-3 items-center relative ml-10 w-11/12"
+            "listProject py-[100px] grid grid-cols-12 gap-3 items-center relative md:ml-10"
           )}
         >
           <div
             className={clsx(
-              "flex items-left z-[2] relative w-[400px] h-[200px] bg-primary-4 md:col-start-1 "
+              "flex items-left z-[2] relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px]  bg-primary-4 md:col-start-2"
             )}
           >
             <img
-              className={clsx("flex relative w-[400px] h-[200px] opacity-20 hover:opacity-100")}
+              className={clsx("flex relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px] opacity-50 hover:opacity-100")}
               src={Project.picture}
             />
           </div>
-          <div className={clsx("grid relative z-[3] md:col-end-11 m-md:col-start-2 m-md:w-[400px] m-md:h-[200px]")}>
+          <div className={clsx("grid relative z-[3] md:col-end-12 m-md:col-start-2 m-md:w-[600px] m-md:h-[300px]")}>
             <div
               className={clsx(
-                "text-right items-right flex flex-col flex-wrap justify-end content-end md:gap-y-6 "
+                "text-right items-right flex flex-col flex-wrap justify-end content-end md:gap-y-7 "
               )}
             >
               <div
                 className={clsx(
-                  "featuredProject text-md mb-3 text-primary-24 font-thin"
+                  "featuredProject text-md mb-3 text-primary-24 font-thin flex justify-end"
                 )}
               >
                 Featured Project
@@ -55,12 +55,12 @@ export default function Post(Project) {
       ) : (
         <div
           className={clsx(
-            "listProject py-[100px] grid grid-cols-12 gap-3 items-center relative md:ml-10 md:w-11/12  "
+            "listProject py-[100px] grid grid-cols-12 gap-3 items-center relative md:ml-10"
           )}
         >
           <div
             className={clsx(
-              "z-[3] relative w-[100px] pr-[50px] md:col-end-4 m-md:col-end-2 m-md:pr-1 grid m-md:w-[400px] m-md:h-[200px]"
+              "z-[3] relative pr-[50px] md:col-end-2 m-md:col-end-2 m-md:pr-1 grid m-md:w-[600px] m-md:h-[300px]"
             )}
           >
             <div
@@ -93,11 +93,11 @@ export default function Post(Project) {
           </div>
           <div
             className={clsx(
-              "grid z-[2] relative w-[400px] h-[200px] bg-primary-4 md:col-start-5 m-md:col-start-2"
+              "grid z-[2] relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px] bg-primary-4 md:col-start-3 m-md:col-start-4"
             )}
           >
             <img
-              className={clsx("flex relative w-[400px] h-[200px] opacity-20 hover:opacity-100")}
+              className={clsx("flex relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px] opacity-50 hover:opacity-100")}
               src={Project.picture}
             />
           </div>
