@@ -4,7 +4,6 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
 
 import Popup from "./Popups";
-import "./Navbar.css";
 import clsx from "clsx";
 import {
   CloseIcon,

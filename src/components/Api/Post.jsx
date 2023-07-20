@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { GithubIcon } from "../../assets/svg";
+import {GithubIcon } from "../../assets/svg";
 
 export default function Post(Project) {
   return (
@@ -7,28 +7,28 @@ export default function Post(Project) {
       {Project.id % 2 == 0 ? (
         <div
           className={clsx(
-            "listProject py-[100px] grid grid-cols-12 gap-3 items-center relative md:ml-10"
+            "listProject py-[100px] grid grid-cols-12 gap-3 items-center relative md:ml-10 m-md:m-0"
           )}
         >
+          <img
+            className={clsx(
+              "flex z-[2] absolute m-md:w-[400px] m-md:h-[200px] opacity-30 hover:opacity-100 md:col-start-2 md:col-end-10 l-md:col-start-3 l-md:col-end-11 m-md:col-start-1 m-md:col-end-12"
+            )}
+            src={Project.picture}
+          />
           <div
             className={clsx(
-              "flex items-left z-[2] relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px]  bg-primary-4 md:col-start-2"
+              "grid relative z-[3] md:col-start-9 md:col-end-12 m-md:col-start-2 m-md:col-end-11 m-md:h-[200px]"
             )}
           >
-            <img
-              className={clsx("flex relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px] opacity-50 hover:opacity-100")}
-              src={Project.picture}
-            />
-          </div>
-          <div className={clsx("grid relative z-[3] md:col-end-12 m-md:col-start-2 m-md:w-[600px] m-md:h-[300px]")}>
             <div
               className={clsx(
-                "text-right items-right flex flex-col flex-wrap justify-end content-end md:gap-y-7 "
+                "md:text-right md:items-right flex flex-col flex-wrap justify-end md:content-end md:gap-y-7 m-md:text-center m-md:content-center"
               )}
             >
               <div
                 className={clsx(
-                  "featuredProject text-md mb-3 text-primary-24 font-thin flex justify-end"
+                  "featuredProject text-md mb-3 text-primary-24 font-thin flex md:justify-end m-md:justify-center"
                 )}
               >
                 Featured Project
@@ -38,14 +38,20 @@ export default function Post(Project) {
               </div>
 
               <a
-                className={clsx("flex justify-end flex-wrap")}
+                className={clsx("flex md:justify-end m-md:justify-center flex-wrap")}
                 href={Project.github}
                 title="github icons"
               >
                 <GithubIcon />
               </a>
 
-              <div className={clsx("contentProject relative flex mt-10 bg-[#262728] md:w-[200px] text-right italic font-normal")}>"{Project.content}"</div>
+              <div
+                className={clsx(
+                  "contentProject relative flex mt-10 bg-[#262728] md:w-[200px] text-right italic font-normal m-md:w-[350px]"
+                )}
+              >
+                "{Project.content}"
+              </div>
               <ul>
                 <li>{Project.language}</li>
               </ul>
@@ -58,14 +64,14 @@ export default function Post(Project) {
             "listProject py-[100px] grid grid-cols-12 gap-3 items-center relative md:ml-10"
           )}
         >
-          <div
+          <button
             className={clsx(
-              "z-[3] relative pr-[50px] md:col-end-2 m-md:col-end-2 m-md:pr-1 grid m-md:w-[600px] m-md:h-[300px]"
+              "z-[3] relative pr-[50px] md:col-start-1 md:col-end-4 m-md:col-start-1 m-md:col-end-12 m-md:pr-1 grid m-md:h-[200px]"
             )}
           >
             <div
               className={clsx(
-                "text-left items-left flex flex-col flex-wrap justify-start content-end"
+                "md:text-left md:items-left flex flex-col flex-wrap justify-start md:content-end"
               )}
             >
               <div
@@ -80,29 +86,31 @@ export default function Post(Project) {
               </div>
 
               <a
-                className={clsx("")}
+                className={clsx("m-md:flex m-md:justify-center")}
                 href={Project.github}
                 title="github icons"
               >
                 <GithubIcon />
               </a>
 
-              <div className={clsx("contentProject relative flex mt-10 bg-[#262728] w-[200px] text-right italic font-normal")}>"{Project.content}"</div>
+              <div
+                className={clsx(
+                  "contentProject relative flex mt-10 bg-[#393c3f] w-[200px] text-right italic font-normal m-md:w-[350px]"
+                )}
+              >
+                "{Project.content}"
+              </div>
               <ul>{Project.language}</ul>
             </div>
-          </div>
-          <div
+          </button>
+          <img
             className={clsx(
-              "grid z-[2] relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px] bg-primary-4 md:col-start-3 m-md:col-start-4"
+              "flex absolute z-[2]  m-md:w-[400px] m-md:h-[200px] opacity-30 hover:opacity-100 md:col-start-3 md:col-end-11 m-md:col-start-2 m-md:col-end-11"
             )}
-          >
-            <img
-              className={clsx("flex relative md:w-[600px] md:h-[300px] m-md:w-[400px] m-md:h-[200px] opacity-50 hover:opacity-100")}
-              src={Project.picture}
-            />
-          </div>
+            src={Project.picture}
+          />
         </div>
-      )}
+      )}     
     </>
   );
 }

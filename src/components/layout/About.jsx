@@ -4,10 +4,10 @@ import clsx from "clsx";
 const About = () => {
   const listLi = clsx("p-2 text-sm");
   const border = clsx(
-    " absolute w-60 h-72 border-1 mt-5 ml-5 border-solid border-white z-[5] content block content-none rounded-xl ease-linear"
+    " absolute w-60 h-72 border-1 mt-5 ml-5 border-solid border-white z-[5] content block content-none rounded-xl "
   );
   const border2 = clsx(
-    " absolute w-60 h-72 border-1 mt-2 ml-2 border-solid border-white z-[5] content block content-none rounded-xl ease-linear"
+    " absolute w-60 h-72 border-1 mt-2 ml-2 border-solid border-white z-[5] content block content-none rounded-xl "
   );
   const [isAdd, setIsAdd] = useState(true);
 
@@ -84,7 +84,12 @@ const About = () => {
                 alt=""
               />
 
-              <div className={isAdd ? border : border2}></div>
+              <div
+                className={isAdd ? border : border2}
+                // className={clsx(
+                //   " absolute w-60 h-72 border-1 mt-6 ml-6  hover:mt-2 hover:ml-2 border-solid border-white z-[5] content block content-none rounded-xl"
+                // )}
+              ></div>
             </div>
           </div>
         </div>

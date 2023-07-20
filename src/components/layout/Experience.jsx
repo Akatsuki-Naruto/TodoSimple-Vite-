@@ -3,7 +3,7 @@ import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
 const Experience = () => {
-  const topic = clsx("list list-none pl-5 font-[Times New Roman] hover:text-primary-8 hover:border-l-1 hover:border-l-solid hover:border-l-primary-8 hover:bg-primary-9 focus:outline-none focus:border-l-1 focus:border-l-solid focus:border-l-primary-8 rounded-none border-l-1 border-l-solid border-l-primary-10 item-center py-2 ");
+  const topic = clsx("list list-none pl-5 font-[Times New Roman] hover:text-primary-8 hover:border-l-1 hover:border-l-solid hover:border-l-primary-8 hover:bg-primary-9 focus:outline-none focus:border-l-1 focus:border-l-solid focus:border-l-primary-8 rounded-none border-l-1 border-l-solid border-l-primary-10 item-center py-2 m-md:mx-4");
   const tabPanels = clsx("tabPanels");
   const exp = clsx ("text-left")
   const name = clsx("text-lg text-primary-2")
@@ -20,8 +20,8 @@ const Experience = () => {
           <span className={clsx("topicExp text-primary-2 text-xl pl-1")}>Where I’ve Worked</span>
         </div>
         <Tab.Group>
-          <div className={clsx("tabGroup grid gap-5 grid-cols-[1fr,4fr]")}>
-            <Tab.List className={clsx("tabList flex flex-col font-[Courier] text-secondary-300")}>
+          <div className={clsx("tabGroup grid gap-5 md:grid-cols-[1fr,4fr]")}>
+            <Tab.List className={clsx("tabList flex md:flex-col font-[Courier] text-secondary-300 m-md")}>
               <Tab className={topic}>School</Tab>
               <Tab className={topic}>Work</Tab>
               <Tab className={topic}>Internship</Tab>

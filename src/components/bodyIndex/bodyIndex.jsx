@@ -1,9 +1,8 @@
 import React from "react";
 
 import About from "../layout/About";
-import "./bodyIndex.css";
 import Experience from "../layout/Experience";
-import Project from "../layout/Project/Project";
+import Project from "../layout/Project";
 import Contact from "../layout/Contact";
 import clsx from "clsx";
 import { DiscordIcon, GithubIcon, SkypeIcon } from "../../assets/svg";

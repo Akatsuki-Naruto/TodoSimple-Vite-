@@ -1,7 +1,6 @@
 import React from "react";
 
-import "./Project.css";
-import CallAPI from "../../Api/callAPI";
+import CallAPI from "../Api/callAPI";
 import clsx from "clsx";
 
 const Work = () => {

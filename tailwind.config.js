@@ -63,10 +63,12 @@ export default {
       },
       screens:{
         'm-md':{'max':'768px'},
+        'l-md':{'max':'1050px'},
         'md': '768px',
       },
       gridTemplateColumns: {
         'project': 'repeat(13, 1fr)',
+        'ul':'repeat(auto-fill, minmax(300px, 1fr))'
       }
     },
   },
