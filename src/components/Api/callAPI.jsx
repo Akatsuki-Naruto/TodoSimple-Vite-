@@ -51,15 +51,19 @@ function CallAPI() {
           />
         ))}
       </ul>
+      <div className={clsx("text-2xl")}>Other Noteworthy Projects</div>
       <ul className={clsx("list-none p-0 grid gap-[15px] relative grid-cols-ul mt-[40px] items-center")}>
-        <button className={buttonProj}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
-        <button className={buttonProj}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
-        <button className={buttonProj}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
-        <button className={buttonProj}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
-        <button className={buttonProj}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
-        <button className={buttonProj}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
-        <button className={`${buttonProj} ${isActive2 ? show : hide}`}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
-        <button className={`${buttonProj} ${isActive2 ? show : hide}`}><DocumentIcon/><GithubIcon/><ShareIcon/></button>
+        
+        <a href="index.html" className={buttonProj}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
+        <a href="index.html" className={buttonProj}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
+
+        <a href="index.html" className={buttonProj}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
+        <a href="index.html" className={buttonProj}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
+
+        <a href="index.html" className={buttonProj}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
+        <a href="index.html" className={buttonProj}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
+        <a href="index.html" className={`${buttonProj} ${isActive2 ? show : hide}`}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
+        <a href="index.html" className={`${buttonProj} ${isActive2 ? show : hide}`}><button ><DocumentIcon/><GithubIcon/><ShareIcon/></button></a>
         
       </ul>
         <button className={clsx(" my-6 border-solid border-[1px] border-white px-2 py-1")} onClick={handleShow}> {isActive1 ? "Show less" : "Show more"}</button>

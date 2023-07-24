@@ -22,7 +22,7 @@ const BodyIndex = () => {
           <div className={clsx("textIndex1 text-primary-11 text-base pb-2")}>
             Hi, There
           </div>
-          <div className={clsx("textIndex2 text-primary-12 text-6xl pb-3")}>
+          <div className={clsx("textIndex2 text-primary-12 md:text-6xl l-md:text-4xl m-md:text-lg pb-3")}>
             Duong Hoang Thuc.
           </div>
           <div className={clsx("textIndex3 text-primary-13 text-4xl pb-2")}>
